@@ -12,9 +12,11 @@ print()
 ```
 
 ##Class properties
+```
 head
 tail
 length
+```
 
 ###Example
 
