@@ -1,7 +1,7 @@
 # LinkedList
 A simple linked list structure written in ES6.
 
-##Class methods
+###Class methods
 ```
 push(data)
 pop()
@@ -16,7 +16,7 @@ head
 tail
 length
 
-##Example
+###Example
 
 ```
 import {List} from './path/linkedList'
