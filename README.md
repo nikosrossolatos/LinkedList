@@ -23,14 +23,14 @@ length
 ```javascript
 import {List} from './path/linkedList'
  
-var list = new List()
+var list = new List();
  
 for (var i = 0; i < 1000; i++) {
-  list.push(i)
+  list.push(i);
 }
  
-console.log(list.head)
-console.log(list.tail)
+console.log(list.head);
+console.log(list.tail);
 
 console.log(list.pop());
 
@@ -42,7 +42,7 @@ list.removeDuplicates();
 list.print(); //check your console
 
 while (list.length) {
-  console.log(list.shift())
+  console.log(list.shift());
 }
 ```
 
