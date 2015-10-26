@@ -1,0 +1,36 @@
+{
+  "name": "TreeJS",
+  "description": "JS Tree Nodes",
+  "version": "0.0.1",
+  "author": {
+    "email": "nickrossolatos@gmail.com",
+    "name": "Nick Rossolatos",
+    "url": "http://nickrossolatos.me"
+  },
+  "scripts":{
+    "test":"babel-node test/index.js | tap-spec"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browser-sync": "^2.9.11",
+    "browserify": "^11.2.0",
+    "del": "^2.0.2",
+    "gulp": "^3.8.6",
+    "gulp-clean": "^0.2.4",
+    "gulp-jshint": "^1.11.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "jshint-stylish": "^2.0.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.4",
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-paths": "^2.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.5.0"
+  }
+}
