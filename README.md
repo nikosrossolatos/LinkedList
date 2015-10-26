@@ -43,3 +43,16 @@ while (list.length) {
   console.log(list.shift())
 }
 ```
+
+###Testing
+
+```
+npm install
+```
+
+```
+npm test
+```
+
+##Licence
+MIT
