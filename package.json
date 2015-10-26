@@ -1,11 +1,15 @@
 {
-  "name": "TreeJS",
-  "description": "JS Tree Nodes",
+  "name": "LinkedListJS",
+  "description": "Linked List structure in Javascript",
   "version": "0.0.1",
   "author": {
     "email": "nickrossolatos@gmail.com",
     "name": "Nick Rossolatos",
     "url": "http://nickrossolatos.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spideynr/LinkedList.git"
   },
   "scripts":{
     "test":"babel-node test/index.js | tap-spec"
