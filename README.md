@@ -20,7 +20,7 @@ length
 
 ###Example
 
-```
+```javascript
 import {List} from './path/linkedList'
  
 var list = new List()
