@@ -51,6 +51,34 @@ test('Clearing values', (t)=>{
 	t.end();
 })
 
+test('Removing from list', (t)=>{
+	
+	list.clear();
+	
+	list.push(5);
+	list.push(7);
+	list.removeNode(7);
+
+	t.equal(list.length,1,'length should substract');
+	t.equal(list.head.value,5,'should remove');
+	t.deepEqual(list.tail,list.head,'tail should change');
+	t.end();
+})
+
+test('Pop from list', (t)=>{
+	
+	list.clear();
+	
+	list.push(5);
+	list.push(7);
+	var item = list.pop();
+
+	t.equal(list.length,1,'length should substract');
+	t.equal(item.value,7,'should return item removed');
+	t.deepEqual(list.tail,list.head,'tail should change');
+	t.end();
+})
+
 test('Removing duplicates', (t)=>{
 	
 	list.clear();
@@ -106,6 +134,5 @@ test('Testing impossibru', (t)=>{
 
 	t.equal(list.length,10000,'length should be equal');
 	t.notOk(list.tail.next,'tail.next should be null');
-	t.pass(list.print());
 	t.end();
 });

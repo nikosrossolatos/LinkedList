@@ -19,18 +19,31 @@ export class List{
 		}
 		this._length++;
 	}
-
-	pop(value,previous){
+	removeNode(value){
 		var node = this.head;
-		var previous;
+		var previous = null;
 		while(node){
 			if(node.value == value){
-				previous ? previous.next = node.next : this.head = node.next;
+				!node.next? this.tail = previous : '';
+				// previous ? previous.next = node.next : this.head = node.next;
+				Object.assign(node,node.next);
+				this._length--;
 				return node;
 			}
 			previous = node;
 			node = node.next;
 		}
+	}
+	pop(){
+		var node = this.head;
+		var previous = null;
+		while(node.next){
+			previous = node;
+			node = node.next;
+		}
+		this.tail = previous;
+		this._length--;
+		return previous.next;
 	}
 	shift(){
 		var temp = this.head;
